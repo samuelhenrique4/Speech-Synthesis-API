@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .dish {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dish h2 {
+            color: #555;
+        }
+
+        .dish p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .speak-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .speak-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cardápio</h1>
+        <div class="menu">
+            <!-- Primeiro Prato -->
+            <div class="dish">
+                <img src="https://cdn.awsli.com.br/600x450/502/502688/produto/219239623/IMG_8029.jpeg" height="100px" width="100px" alt="Feijoada completa com arroz, couve refogada e laranja">
+                <h2>Feijoada</h2>
+                <p>Feijoada completa com arroz, couve refogada e laranja.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- Segundo Prato -->
+            <div class="dish">
+                <img src="https://cdn.awsli.com.br/600x450/502/502688/produto/219239623/IMG_8029.jpeg" height="100px" width="100px" alt="Feijoada completa com arroz couve refogada e laranja">
+                <h2>Moqueca de Peixe</h2>
+                <p>Moqueca de peixe com leite de coco, pimentões e dendê.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- Terceiro Prato -->
+            <div class="dish">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMPDT_TbaKcz7hneOWqZKXFD74dNvelnp4Q&s" height="100px" width="100px" alt="Strogonoff de frango acompanhado de arroz branco e batata palha">
+                <h2>Strogonoff de Frango</h2>
+                <p>Strogonoff de frango acompanhado de arroz branco e batata palha.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- quarto Prato -->
+            <div class="dish">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0d7vnjjotJ4M7UtKwX2u2ePbDKxQx1KW7Q&s" height="100px" width="100px" alt="Arros branco e Macarrão com almondegas">
+                <h2>Macarrão</h2>
+                <p>Arros branco e Macarrão com almondegas.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- quinto prato -->
+            <div class="dish">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRsU8dgSQL1_iJV4U-ISBJg64TL_Q5du895A&s" height="100px" width="100px" alt="Bolo de chocolate com recheio e cobertura de chocolate">
+                <h2>Bolo de Chocolate</h2>
+                <p>Bolo de chocolate com recheio e cobertura de chocolate.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- sexto Prato -->
+            <div class="dish">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCxlabl3pcSgD9u639hsnXd7DzqKmBeB8NAw&s" height="100px" width="100px" alt="Salada de tomate e alface temperada a moda da casa">
+                <h2>Salada</h2>
+                <p>Salada de tomate e alface temperada a moda da casa.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- setimo Prato -->
+            <div class="dish">
+                <img src="https://storage.moovin.store/main/3f263920-55b4-4474-b954-1f62aa0fa0cd/erp/16228911573-0png?v=1721912542" height="100px" width="100px" alt="Petit Gateau acompanhado de uma bola de sorvete">
+                <h2>Petit Gateau</h2>
+                <p>Petit Gateau acompanhado de uma bola de sorvete.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+            <!-- oitavo Prato -->
+            <div class="dish">
+                <img src="https://static.itdg.com.br/images/1200-675/06edb6a571a067e7c6029dbde006d1b5/275301-original.jpg" height="100px" width="100px" alt="Bolacha com sabor e recheio a escolha do cliente">
+                <h2>Macarron</h2>
+                <p>Bolacha com sabor e recheio a escolha do cliente.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+            
+            <!-- nono Prato -->
+            <div class="dish">
+                <img src="https://cooknenjoy.com/wp-content/uploads/2021/10/torta-de-limao-01-1800x1286-1200x1200.jpg" height="100px" width="100px" alt="Torta de massa podre com recheio de limão">
+                <h2>Torta de Limão</h2>
+                <p>Torta de massa podre com recheio de limão.</p>
+                <button onclick="lerDescrição(this)">Ouvir Descrição</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function lerDescrição (botao){
+        window.speechSynthesis.cancel();
+        const descricaoImg =
+        botao.parentElement.queryselector('img').alt;
+        lerTexto(descricaoImg);
+    }
+    function lerTexto(texto){
+        const mensagem = new SpeechSynthesisUtterance(texto);
+        window.speechSynthesis.speak(mensagem);
+    }
+</script>
